@@ -1,5 +1,6 @@
 package com.pemob.responsi1mobileh1d023036
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -92,8 +93,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupNavigation() {
         menuHistory.setOnClickListener {
-            // TODO: Pindah ke HistoryActivity
-            Toast.makeText(this, "Buka Club History", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HistoryActivity::class.java)
+            startActivity(intent)
         }
 
         menuCoach.setOnClickListener {
