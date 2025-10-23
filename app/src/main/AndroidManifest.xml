@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Responsi1MobileH1D023036">
         <activity
+            android:name=".CoachActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistoryActivity"
             android:exported="false" />
         <activity

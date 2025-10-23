@@ -98,8 +98,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         menuCoach.setOnClickListener {
-            // TODO: Pindah ke CoachActivity
-            Toast.makeText(this, "Buka Head Coach", Toast.LENGTH_SHORT).show()
+            val teamData = viewModel.teamData.value
+            if (teamData != null) {
+                val coach = teamData.coach
+                val intent = Intent(this, CoachActivity::class.java)
+                intent.putExtra("EXTRA_COACH_DATA", coach)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Data belum siap, coba lagi.", Toast.LENGTH_SHORT).show()
+            }
         }
 
         menuSquad.setOnClickListener {

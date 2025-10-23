@@ -1,6 +1,7 @@
 package com.pemob.responsi1mobileh1d023036.data.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class TeamResponse(
     @SerializedName("id")
@@ -17,7 +18,7 @@ data class TeamResponse(
     val squad: List<SquadMember>
 )
 
-// Data class Head Coach
+// Data class untuk Pelatih
 data class Coach(
     @SerializedName("id")
     val id: Int?,
@@ -27,9 +28,9 @@ data class Coach(
     val nationality: String?,
     @SerializedName("dateOfBirth")
     val dateOfBirth: String?
-)
+) : Serializable
 
-// Data class Team Squad
+// Data class untuk setiap Anggota Skuad (Pemain)
 data class SquadMember(
     @SerializedName("id")
     val id: Int,
