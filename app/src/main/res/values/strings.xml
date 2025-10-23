@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Responsi 1 Mobile H1D023036</string>
+    <string name="app_name">OGCNice</string>
+    <string name="ogc_desc">
+        OGC Nice, officially known as Olympique Gymnaste Club Nice Côte d\'Azur, is a
+        professional football club from Nice, France, founded in 1904. Competing in France\'s
+        top division, Ligue 1, the club plays its home matches at the Allianz Riviera Stadium.
+        Nicknamed \"Les Aiglons,\" OGC Nice has a long and proud history, having won several
+        Ligue 1 titles and Coupe de France trophies throughout its existence.
+    </string>
 </resources>
