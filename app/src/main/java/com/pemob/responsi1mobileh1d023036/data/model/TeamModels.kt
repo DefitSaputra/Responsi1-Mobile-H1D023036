@@ -42,4 +42,4 @@ data class SquadMember(
     val nationality: String,
     @SerializedName("dateOfBirth")
     val dateOfBirth: String?
-)
+) : Serializable

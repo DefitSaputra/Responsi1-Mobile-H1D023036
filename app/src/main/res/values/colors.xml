@@ -2,8 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="ogc_red">#E2001A</color>
     <color name="ogc_black">#000000</color>
     <color name="ogc_white">#FFFFFF</color>
     <color name="ogc_grey_background">#F5F5F5</color>
+
+    <color name="pos_goalkeeper">#FFFF00</color>
+    <color name="pos_defender">#0000FF</color>
+    <color name="pos_midfielder">#008000</color>
+    <color name="pos_forward">#FF0000</color>
+    <color name="pos_default_text">#000000</color>
+
 </resources>

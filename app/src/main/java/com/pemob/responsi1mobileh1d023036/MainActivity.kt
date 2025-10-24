@@ -110,8 +110,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         menuSquad.setOnClickListener {
-            // TODO: Pindah ke SquadActivity
-            Toast.makeText(this, "Buka Team Squad", Toast.LENGTH_SHORT).show()
+            val teamData = viewModel.teamData.value
+            if (teamData != null) {
+                val squadList = teamData.squad
+                val intent = Intent(this, SquadActivity::class.java)
+                intent.putExtra("EXTRA_SQUAD_DATA", ArrayList(squadList))
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Data belum siap, coba lagi.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
