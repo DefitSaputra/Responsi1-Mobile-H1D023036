@@ -41,9 +41,14 @@ Aplikasi ini memiliki beberapa fitur yang sudah sesuai dengan ketentuan yang dip
 
 5.  **Fragment Detail Pemain:**
     * Ketika sebuah kartu pemain di-klik, sebuah `BottomSheetDialogFragment` akan muncul dari bawah.
-    * *Fragment* ini menampilkan detail lengkap pemain (Nama, TTL, Kebangsaan, Posisi) yang **datanya berasal dari API**.
-    * 
+    * *Fragment* ini menampilkan detail lengkap pemain (Nama, TTL, Kebangsaan, Posisi) yang **datanya berasal dari API**
 ---
+
+## Video Demo Aplikasi
+
+Berikut adalah video demo yang menampilkan fungsionalitas aplikasi dan ikon aplikasi (sesuai ketentuan):
+
+![Demo Aplikasi](demo/demo_app.gif)
 
 ## Penjelasan Alur Data (API ke Layar)
 
@@ -77,9 +82,3 @@ Saat sebuah kartu pemain di-klik, `SquadAdapter` mengambil data `player` yang di
 Data ini dikirim ke `PlayerDetailFragment` melalui *Bundle* (`newInstance`). `PlayerDetailFragment` (sebuah `BottomSheetDialogFragment`) ditampilkan, membaca data dari *Bundle*-nya, dan menampilkan detail pemain serta *border* berwarna di bagian atas.
 
 ---
-
-## Video Demo Aplikasi
-
-Berikut adalah video demo yang menampilkan fungsionalitas aplikasi dan ikon aplikasi (sesuai ketentuan):
-
-![Demo Aplikasi](demo/demo_app.gif)
